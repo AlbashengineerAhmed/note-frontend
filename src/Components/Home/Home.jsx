@@ -30,7 +30,7 @@ function Home() {
         },
       };
 
-      const response = await axios.post('http://localhost:5000/note', data, config);
+      const response = await axios.post(`${env.process.BASE_URL}/note`, data, config);
       console.log(data);
       console.log(response);
       if (response.data.message === 'Done') {
