@@ -1,0 +1,48 @@
+.motion{
+    /* background-color: aqua; */
+    animation:  motionImg 1.5s ease-in infinite;
+    transition: all 0.5s ease-in;
+  }
+  .ahmed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 20px 40px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: aqua; */
+  }
+  .lough{
+    margin: auto;
+    animation: color 3s infinite ease-in;
+  }
+  /* .mashee{
+    animation: color 5s infinite ease-in;
+  } */
+    @keyframes color {
+      20%{
+        color: aqua;
+      }
+      50%{
+        color: tomato;
+      }
+      80%{
+        color: green;
+      }
+      100%{
+        color: aqua;
+      }
+    }
+  
+  @keyframes motionImg {
+    0%{
+      margin-bottom: 10px;
+    }
+    60%{
+      margin-bottom: 0px;
+    }
+    100%{
+      margin-bottom: 10px;
+    }
+  }

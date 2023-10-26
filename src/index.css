@@ -1,0 +1,290 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    /* background: #025074;  */
+    /* background: -webkit-linear-gradient(to left, #9499f8, #4e54c8);  */
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 163, 72) !important;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    color: rgb(252, 169, 43) !important;
+}
+.loading{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading i{
+    font-size: 40px;
+    color: #fff;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+input,
+textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #fff;
+    border-radius: 0;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.correct-div{
+    margin-top: 10px;
+    background-color: #b0b0b0dc;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 7px 0px;
+}
+.correct-password{
+    margin-top: 10px;
+    background-color: #b0b0b0dc;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 7px 0px;
+}
+
+.bg-light {
+    background-color: #29d0a2 !important;
+}
+
+
+.add {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+    font-size: 20px;
+    transition: 0.2s;
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.add:hover {
+    background-color: rgb(176, 92, 8);
+    color: #fff;
+}
+
+.note {
+    background: linear-gradient(rgb(195, 105, 3),rgb(132, 67, 3));
+    transition: all 0.3s;
+    color: white !important;
+    font-size: larger;
+}
+
+.note:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.75);
+}
+
+.note a {
+    color: black;
+    font-size: 23px;
+}
+
+.note i {
+    transition: all 0.3s;
+}
+
+.del , .edit{
+    color: white !important;
+}
+.del:hover {
+    color: #F44336 !important;
+    transform: rotate(-110deg);
+}
+
+.edit:hover {
+    color: rgb(255, 226, 10) !important;
+    transform: rotate(-50deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+.divbelow{
+    margin-top: 150px;
+}
+.context {
+    width: 100%;
+    position: absolute;
+    top:0%;
+    height: 100%;
+    z-index: 123456;
+    
+}
+
+.area{
+    background: rgb(176, 92, 8);  
+    background: -webkit-linear-gradient(to left,rgb(176, 92, 8), rgb(132, 67, 2)); 
+    background-repeat: repeat-y;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 22s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
