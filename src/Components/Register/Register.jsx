@@ -27,7 +27,7 @@ const validationSchema = Yup.object({
 const onSubmit = async (values, { setSubmitting }) => {
     setIsLoading(true);
     try {
-    const { data } = await axios.post(`${env.process.BASE_URL}/auth/signup`, values);
+    const { data } = await axios.post(`https://note-92mk.onrender.com/auth/signup`, values);
     console.log(data);
     if (data.message === 'Done') {
         toast.success('Registration successful');

@@ -30,7 +30,7 @@ function Home() {
         },
       };
 
-      const response = await axios.post(`${env.process.BASE_URL}/note`, data, config);
+      const response = await axios.post(`https://note-92mk.onrender.com/note`, data, config);
       console.log(data);
       console.log(response);
       if (response.data.message === 'Done') {

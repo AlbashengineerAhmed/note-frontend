@@ -42,7 +42,7 @@ function App() {
           }
         };
   
-        const { data } = await axios.get(`${env.process.BASE_URL}/user/profile`, config);
+        const { data } = await axios.get(`https://note-92mk.onrender.com/user/profile`, config);
         // console.log(data.user.userName);
         setName(data.user.userName)
       }

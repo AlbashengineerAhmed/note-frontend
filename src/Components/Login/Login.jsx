@@ -24,7 +24,7 @@ const onSubmit = async (values, { setSubmitting }) => {
     setIsLoading(true);
     try {
         // console.log(values);
-    const { data } = await axios.post(`${env.process.BASE_URL}/auth/login`, values);
+    const { data } = await axios.post(`https://note-92mk.onrender.com/auth/login`, values);
     console.log(data);
     if (data.message === 'Done') {
         toast.success('Login successful');
