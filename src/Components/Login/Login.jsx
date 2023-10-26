@@ -36,6 +36,8 @@ const onSubmit = async (values, { setSubmitting }) => {
         toast.error('Validation error. Please check your input.');
     }else if (data.message === 'In-valid Password') {
         toast.error('In-valid Password. Please enter your correct password.');
+    }else if (data.message === 'In-valid Email') {
+        toast.error('In-valid Email. Please use a different email already exists.');
     }
     } catch (error) {
         toast.error('An error occurred. Please try again.');

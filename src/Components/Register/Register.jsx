@@ -34,8 +34,6 @@ const onSubmit = async (values, { setSubmitting }) => {
         goToLogin();
     } else if (data.message === 'Email exist') {
         toast.error('Email already exists. Please use a different email.');
-    }else if (data.message === 'In-valid Email') {
-        toast.error('In-valid Email. Please use a different email already exists.');
     }else if (data.message === 'validation error') {
         toast.error('Validation error. Please check your input.');
     }
