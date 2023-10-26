@@ -3,7 +3,7 @@ import imgError from '../../images/server-error.png';
 import style from './NoteFound.module.css';
 function NoteFound() {
   return (
-    <div className='vh-100 bg-light bg-gradient d-flex flex-wrap  justify-content-center align-items-center'>
+    <div className='vh-100 d-flex flex-wrap  justify-content-center align-items-center'>
         <div className={`col-md-4 ${style.ahmed}`}>
           <h1 className='text-center fw-bolder mb-3 text-danger'>Error 404</h1>
           <h2 className={`${style.mashee} text-black text-center fw-bold`}>Page Not Found</h2>

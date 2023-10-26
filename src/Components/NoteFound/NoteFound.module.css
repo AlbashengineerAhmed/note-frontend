@@ -1,5 +1,4 @@
 .motion{
-    /* background-color: aqua; */
     animation:  motionImg 1.5s ease-in infinite;
     transition: all 0.5s ease-in;
   }
@@ -11,15 +10,14 @@
     padding: 20px 40px;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
-    /* background-color: aqua; */
   }
   .lough{
     margin: auto;
     animation: color 3s infinite ease-in;
   }
-  /* .mashee{
+  .mashee{
     animation: color 5s infinite ease-in;
-  } */
+  }
     @keyframes color {
       20%{
         color: aqua;
