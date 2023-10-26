@@ -6,13 +6,13 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"
 import "jquery/dist/jquery.min.js"
 import "popper.js/dist/umd/popper.min.js"
 import "@fortawesome/fontawesome-free/css/all.min.css"
-import { BrowserRouter } from "react-router-dom"
+import { HashRouter } from "react-router-dom"  // Change BrowserRouter to HashRouter
 import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+     <HashRouter>  // Change BrowserRouter to HashRouter
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );

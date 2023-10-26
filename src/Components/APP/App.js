@@ -4,7 +4,7 @@ import Login from '../Login/Login'
 import Navbar from '../Navbar/Navbar'
 import NoteFound from '../NoteFound/NoteFound'
 import Register from '../Register/Register'
-import {Route , Routes, useNavigate} from "react-router-dom"
+import { HashRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css';
 import {ToastContainer, toast } from 'react-toastify';
 import jwt_decode from 'jwt-decode';
