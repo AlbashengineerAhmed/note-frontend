@@ -59,7 +59,7 @@ const displayNote = async () => {
   };
 
   try {
-    const response = await axios.get(`http://localhost:5000/note/allNote`, config);
+    const response = await axios.get(`https://note-92mk.onrender.com/note/allNote`, config);
     console.log(response);
     if (response.data.message === 'Done') {
       setNotes(response.data.notes);
@@ -97,7 +97,7 @@ const handleUpdateNote = async (noteId) => {
       },
     };
 
-    const response = await axios.put(`http://localhost:5000/note/${noteId}`, data, config);
+    const response = await axios.put(`https://note-92mk.onrender.com/note/${noteId}`, data, config);
     console.log(response);
     if (response.data.message === "not auth user") {
       toast.error('Not authorized user.');
@@ -136,7 +136,7 @@ const handleDeleteNote = async (noteId) => {
       },
     };
 
-    const response = await axios.delete(`http://localhost:5000/note/${noteId}`, config);
+    const response = await axios.delete(`https://note-92mk.onrender.com/note/${noteId}`, config);
 
     if (response.data.message === 'Done') {
       toast.success('Note deleted successfully.');
